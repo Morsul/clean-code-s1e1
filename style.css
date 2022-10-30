@@ -5,42 +5,42 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.description img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.description .description__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa {
+  .description {
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.task-list__input, .task-list__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-task__wrapper {
   display: flex;
 }
 
@@ -74,8 +74,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.headline {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -103,12 +102,12 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-task__headline{
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.add-task__input {
   width: 318px;
 }
 
@@ -122,54 +121,54 @@ li {
   align-items: center;
 }
 
-li > * {
+.task-list__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.task-list__item  .task-list__checkbox {
   margin: 0 10px;
 }
 
-li > label {
+.task-list__item label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.task-list__item input[type="text"] {
   width: 226px;
 }
 
-.delete img {
+.task-list__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.task-list__delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .task-list__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task-list input[type=text] {
   display: none;
 }
 
-ul .editMode input[type=text] {
+.task-list .task-list__item_edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul .editMode label {
+.task-list .task-list__item_edit-mode label {
   display: none;
 }
-#topSectionForAddingElementToList{
+.add-task{
   margin: 16px 0px;
 }
